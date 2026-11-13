@@ -1,9 +1,0 @@
-a:4:{s:8:"template";s:7:"fixhero";s:4:"mods";a:19:{i:0;b:0;s:18:"nav_menu_locations";a:0:{}s:18:"custom_css_post_id";i:79492;s:26:"fixhero_enable_sticky_menu";s:1:"1";s:24:"fixhero_enable_go_to_top";s:1:"1";s:35:"fixhero_blog_single_sidebar_setting";s:6:"2right";s:27:"fixhero_style_primary_color";s:7:"#8b0404";s:15:"fixhero_favicon";s:67:"https://windows.fixherotheme.com/wp-content/uploads/2023/09/fav.png";s:20:"fixhero_h2_font_size";s:4:"42px";s:22:"fixhero_style_h2_color";s:7:"#002336";s:22:"fixhero_style_h3_color";s:7:"#002336";s:22:"fixhero_style_h4_color";s:7:"#002336";s:22:"fixhero_style_h5_color";s:7:"#002336";s:22:"fixhero_style_h6_color";s:7:"#002336";s:29:"fixhero_blog_page_btn_setting";s:7:"rs-flat";s:29:"fixhero_style_secondaer_color";s:7:"#231f20";s:24:"fixhero_enable_preloader";s:1:"1";s:38:"fixhero_preloader_animate_circle_color";s:7:"#8b0404";s:23:"fixhero_preloader_image";s:67:"https://windows.fixherotheme.com/wp-content/uploads/2023/09/fav.png";}s:7:"options";a:2:{s:9:"site_icon";s:1:"0";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:138:"@media only screen and (min-width: 992px){
-	.e-con.e-con-boxed > .e-con-inner{
-		max-width: 1315px;
-	}
-}
-#pre-load {
-  z-index: 999999;
-}
-";}

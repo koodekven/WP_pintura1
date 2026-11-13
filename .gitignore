@@ -2,3 +2,5 @@
 /wp-content/uploads/
 /error_log
 .htaccess
+*.zip
+*.sql
