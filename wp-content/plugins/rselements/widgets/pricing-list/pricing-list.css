@@ -1,0 +1,190 @@
+.rs-price-table-list .rs-pricing-list ul {
+  margin: 0;
+  padding: 20px 60px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  align-items: center;
+}
+.rs-price-table-list .rs-pricing-list ul li {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-table-btn {
+  position: relative;
+  padding: 17px 20px 17px 35px;
+  background-color: #D52925;
+  border-radius: 6px 6px 6px 6px;
+  color: #FFFFFF;
+  font-family: "Oswald", Sans-serif;
+  font-size: 16px !important;
+  font-weight: 500;
+  line-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-table-btn:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #000 !important;
+  background: #fff;
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-table-btn svg, .rs-price-table-list .rs-pricing-list ul li .rs-pricing-table-btn i {
+  margin-left: 10px;
+  margin-right: 11px;
+  position: relative;
+  top: 0px;
+  fill: #fff;
+  font-size: 20px;
+  margin-top: 2px;
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-table-btn span {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-table-btn .pricing-sqrt-image span {
+  color: rgba(255, 255, 255, 0.7294117647);
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-btn {
+  text-align: right;
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-btn .btn-part .rs-pricing-table-btn i {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: 0.3s ease;
+}
+.rs-price-table-list .rs-pricing-list ul li .rs-pricing-btn .btn-part .rs-pricing-table-btn:hover i {
+  transform: translate3d(8px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.rs-price-table-list .rs-pricing-list ul li.pricing-icon-image {
+  display: flex;
+  align-items: center;
+}
+.rs-price-table-list .rs-pricing-list ul li.rs-pricing-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.rs-price-table-list .rs-pricing-list ul:hover {
+  background: #00457A;
+  border-radius: 4px;
+}
+.rs-price-table-list .rs-pricing-list ul:hover .rs-pricing-table-btn {
+  background-color: #fff;
+  color: #00457A;
+}
+.rs-price-table-list .rs-pricing-list ul:hover .rs-pricing-table-btn svg, .rs-price-table-list .rs-pricing-list ul:hover .rs-pricing-table-btn i {
+  fill: #00457A;
+  color: #00457A;
+  font-size: 20px;
+}
+.rs-price-table-list .rs-pricing-list ul:hover .pricing-sqrt-image span,
+.rs-price-table-list .rs-pricing-list ul:hover .pricing-sqrt-image,
+.rs-price-table-list .rs-pricing-list ul:hover .pricing-title {
+  color: #fff;
+}
+.rs-price-table-list .rs-pricing-list .pricing-icon-image .pricing-list-icon img {
+  width: 80px;
+  height: 82px;
+}
+.rs-price-table-list .rs-pricing-list .pricing-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #00457A;
+  margin-left: 35px;
+}
+.rs-price-table-list .rs-pricing-list .pricing-sqrt-image {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #00457A;
+}
+.rs-price-table-list .rs-pricing-list .pricing-sqrt-image span {
+  /* Title - 3 */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  color: #515261;
+}
+
+@media only screen and (max-width: 991px) {
+  .rs-price-table-list .rs-pricing-list .pricing-icon-image {
+    padding-left: 30px;
+    width: 36%;
+  }
+  .rs-price-table-list .rs-pricing-list .rs-pricing-btn {
+    padding-right: 30px;
+    width: 36%;
+  }
+  .rs-price-table-list .rs-pricing-list .pricing-sqrt-image {
+    width: 26%;
+  }
+  .rs-price-table-list .rs-pricing-list .pricing-title {
+    font-size: 22px;
+  }
+  .rs-price-table-list .rs-pricing-list .pricing-sqrt-image {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .rs-price-table-list .rs-pricing-list .pricing-title {
+    font-size: 20px;
+  }
+  .rs-price-table-list .rs-pricing-list .pricing-sqrt-image {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .rs-price-table-list .rs-pricing-list .rs-pricing-btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding-right: 15px;
+  }
+  .rs-price-table-list .rs-pricing-list .pricing-sqrt-image {
+    width: 100%;
+  }
+  .rs-price-table-list .rs-pricing-list .pricing-icon-image {
+    width: 100%;
+    padding-left: 15px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .rs-price-table-list .rs-pricing-list ul {
+    flex-direction: column;
+  }
+  .rs-price-table-list .rs-pricing-list ul li {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .rs-price-table-list .rs-pricing-list ul li.rs-pricing-btn {
+    justify-content: center;
+  }
+  .rs-price-table-list .rs-pricing-list ul li.pricing-icon-image {
+    justify-content: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+}

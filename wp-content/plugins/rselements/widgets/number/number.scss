@@ -1,0 +1,240 @@
+@import '../../common';
+.rs-addon-number {
+	.number-part {
+		position: relative;
+		text-align: center;
+		.number-icon {
+			display: inline-block;
+			padding: 5px;
+			font-size: 50px;
+			color: #010d14;
+			transition: all ease .3s;
+			i {
+				transition: all ease .3s;
+			}
+			img {
+				max-width: unset;
+				width: 50px;
+				height: 50px;
+			}
+			&:hover {
+				color: #2b59ff;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				z-index: 0;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				display: block;
+				width: 90px;
+				height: 90px;
+				background: #010d14;
+				border-radius: 50%;
+				animation: pulse-border 1500ms ease-out infinite;
+				opacity: 0;
+				transition: all 0.3s ease 0s;
+				visibility: hidden;
+			}
+		}
+		.number-icon.grayscale {
+			img {
+				filter: gray;
+				-webkit-filter: grayscale(1);
+				-moz-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				filter: grayscale(100%);
+				transition: all 0.3s ease 0s;
+				&:hover {
+					filter: none;
+					-webkit-filter: grayscale(0);
+					-moz-filter: grayscale(0);
+					-ms-filter: grayscale(0);
+					-o-filter: grayscale(0);
+					filter: grayscale(0);
+				}
+			}
+		}
+		.number-text {
+			position: relative;
+			.number-area {
+				display: inline-block;
+				width: 50px;
+				line-height: 50px;
+				z-index: 1;
+				position: relative;
+				transition: all 0.3s ease 0s;
+				text-align: center;
+				&:before {
+					content: "";
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					transform: rotate(45deg);
+					transition: all 0.3s ease 0s;
+				}
+			}
+			.number-prefix {
+				display: block;
+				font-size: 50px;
+				font-weight: 700;
+				line-height: 1.4;
+				color: #121933;
+			}
+			.number-title {
+				position: relative;
+				.title {
+					font-size: 24px;
+					margin: 0 0 10px;
+					color: #121933;
+					a {
+						color: #121933;
+					}
+				}
+			}
+			.number-txt {
+				margin: 0;
+			}
+			.number-btn-part {
+				margin: 15px 0 0;
+				.number-btn {
+					position: relative;
+					display: inline-block;
+					color: #2b59ff;
+					transition: all ease .3s;
+					i {
+						transition: all ease .3s;
+					}
+					&:hover {
+						color: #010d14;
+					}
+				}
+				.number-btn.icon-after {
+					span {
+						float: left;
+					}
+					i {
+						margin-left: 10px;
+					}
+				}
+				.number-btn.icon-before {
+					span {
+						float: right;
+					}
+					i {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		&:after {
+			content: "";
+			width: 0;
+			height: 4px;
+			background: #010d14;
+			position: absolute;
+			transition: all .3s ease 0s;
+			bottom: 0;
+			left: 50%;
+			z-index: 9;
+			transform: translateX(-50%);
+		}
+		&:hover {
+			.number-icon {
+				color: #2b59ff;
+				&:after {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			.number-text {
+				.number-title {
+					.title {
+						color: #010d14;
+						a {
+							color: #010d14;
+						}
+					}
+				}
+			}
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+}
+.rs-addon-number.number-style2 {
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #010d14;
+		transform: scaleY(0);
+		transition: all .3s ease 0s;
+	}
+	.number-part {
+		background: 0 0;
+		text-align: left;
+		position: relative;
+		z-index: 1;
+	}
+	&:hover {
+		&:before {
+			transform: scaleY(1);
+		}
+	}
+}
+.rs-addon-number.number-style3 {
+	.number-part {
+		border-bottom-width: 4px;
+		transition: all .3s ease 0s;
+		position: relative;
+		.number-icon {
+			width: 90px;
+			margin: 0 auto;
+			position: absolute;
+			left: 50%;
+			top: -45px;
+			transform: translateX(-50%);
+			background: #fff;
+			box-shadow: 0px 3px 36px rgba(0, 0, 0, 0.04);
+			transition: all .3s ease 0s;
+			height: 90px;
+			line-height: 90px;
+			text-align: center;
+			border-radius: 100%;
+			i {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				top: 50%;
+			}
+			img {
+				width: 45px;
+				height: 45px;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				top: 50%;
+			}
+		}
+		&:hover {
+			.number-icon {
+				top: -35px;
+			}
+		}
+	}
+}
+.rs-addon-number.number-style4 {
+	.number-part {
+		display: inline-flex;
+	}
+}

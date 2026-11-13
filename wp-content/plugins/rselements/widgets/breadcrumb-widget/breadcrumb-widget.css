@@ -1,0 +1,124 @@
+.breadcrumb-area {
+  margin: 0 auto;
+}
+.breadcrumb-area.style2 {
+  font-size: 0;
+}
+.breadcrumb-area.style2 span {
+  position: relative;
+  font-size: 14px;
+  margin-left: 3px;
+  margin-right: 8px;
+}
+.breadcrumb-area.style2 span:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 1px;
+  height: 16px;
+  border-radius: 0;
+  right: -4px;
+  top: 1.5px;
+  transform: rotate(25deg);
+}
+.breadcrumb-area.style2 span span:after {
+  display: none;
+}
+.breadcrumb-area.style2 span:last-child:after {
+  display: none;
+}
+.breadcrumb-area.style3 {
+  font-size: 0;
+}
+.breadcrumb-area.style3 span {
+  position: relative;
+  font-size: 14px;
+}
+.breadcrumb-area.style3 span:after {
+  content: "\f121";
+  position: absolute;
+  font-family: uicons-regular-rounded !important;
+  font-size: 19px;
+  top: -3px;
+  right: -8px;
+  opacity: 1;
+  transition: all 0.3s;
+  color: #162b62;
+}
+.breadcrumb-area.style3 span span:after {
+  display: none;
+}
+.breadcrumb-area.style3 span:last-child:after {
+  display: none;
+}
+
+.breadcrumb-area.style1 .breadcrumbs-inner {
+  font-size: 0;
+}
+.breadcrumb-area.style1 .breadcrumbs-inner span {
+  font-size: 15px;
+}
+
+.breadcrumbs-inner span a {
+  position: relative;
+  margin-right: 15px;
+}
+.breadcrumbs-inner span a span {
+  transition: all 0.3s ease 0s;
+}
+.breadcrumbs-inner span a:after {
+  content: "";
+  position: absolute;
+  opacity: 1 !important;
+  visibility: visible;
+  height: 13px;
+  width: 1px;
+  right: -14px;
+  top: 3px !important;
+  background: #fff;
+  transition: unset !important;
+  transform: rotate(30deg);
+}
+.breadcrumbs-inner span span:before {
+  display: none;
+}
+.breadcrumbs-inner span span:after {
+  display: none;
+}
+
+.breadcrumbs-title {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 14px 30px;
+  max-width: 300px;
+  margin: 20px auto 0;
+  font-size: 0;
+}
+.breadcrumbs-title span {
+  position: relative;
+  font-size: 14px;
+  padding: 0px 10px 0px 10px;
+}
+.breadcrumbs-title span:after {
+  content: "";
+  position: absolute;
+  background: #162b62;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  right: -3px;
+  top: 5px;
+}
+.breadcrumbs-title span span:after {
+  display: none;
+}
+.breadcrumbs-title span:last-child:after {
+  display: none;
+}
+
+.rs-breadcrumbs .breadcrumbs-meta {
+  justify-content: center;
+}
+
+.single .breadcrumbs-title {
+  max-width: 700px;
+}

@@ -1,0 +1,68 @@
+.rs-price-table-slider.rs-addon-slider .slick-dots li button {
+  background: transparent;
+}
+.rs-price-table-slider.rs-addon-slider .slick-dots li.slick-active button {
+  border-color: #c11f4a;
+  background: #c11f4a;
+}
+.rs-price-table-slider .pricing-wrapper {
+  background: #071230;
+  border-radius: 4px;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+}
+.rs-price-table-slider .pricing-wrapper .title {
+  color: #ffffff;
+}
+.rs-price-table-slider .pricing-wrapper .pricing-price {
+  color: #ffffff;
+}
+.rs-price-table-slider .pricing-wrapper .pricing-price .get-price {
+  color: #c11f4a;
+}
+.rs-price-table-slider .pricing-wrapper .pricing-price .get-period {
+  color: rgba(255, 255, 255, 0.6);
+}
+.rs-price-table-slider .pricing-wrapper .description {
+  color: rgba(255, 255, 255, 0.6);
+}
+.rs-price-table-slider .pricing-wrapper .btn-part a {
+  background: #c11f4a;
+  color: #ffffff;
+}
+.rs-price-table-slider .pricing-wrapper .btn-part a:hover {
+  background: #162b62;
+}
+.rs-price-table-slider .pricing-wrapper .pricing-price span {
+  display: inline-block;
+}
+.rs-price-table-slider .pricing-wrapper .btn-part a {
+  padding: 10px 24px;
+  display: inline-block;
+}
+.rs-price-table-slider .pricing-wrapper:after {
+  position: absolute;
+  content: "";
+  right: 20px;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  background: transparent;
+  border: 1px dashed #c11f4a;
+  pointer-events: none;
+}
+.rs-price-table-slider.color_gradient_scheme .pricing-wrapper .pricing-price .get-price {
+  color: #c11f4a;
+}
+.rs-price-table-slider.color_gradient_scheme .pricing-wrapper .btn-part a {
+  background-image: linear-gradient(90deg, #c11f4a 0%, #162b62 100%);
+  color: #ffffff;
+}
+.rs-price-table-slider.color_gradient_scheme .pricing-wrapper .btn-part a:hover {
+  background-image: linear-gradient(90deg, #162b62 0%, #c11f4a 100%);
+  color: #ffffff;
+}
+.rs-price-table-slider.color_gradient_scheme .pricing-wrapper:after {
+  border-color: #c11f4a;
+}

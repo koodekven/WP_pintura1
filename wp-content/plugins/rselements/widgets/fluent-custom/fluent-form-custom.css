@@ -1,0 +1,452 @@
+.fluentform-widget-wrapper .fluentform .ff_btn_style:hover {
+  opacity: unset !important;
+}
+.fluentform-widget-wrapper .ff-el-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.fluentform-widget-wrapper .ff-el-group.dropdown-icon .ff-el-input--content {
+  position: relative;
+}
+.fluentform-widget-wrapper .ff-el-group.dropdown-icon .ff-el-input--content:after {
+  position: absolute;
+  font-family: remixicon;
+  content: "\ea4e";
+  right: 18px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  color: inherit;
+  pointer-events: none;
+}
+.fluentform-widget-wrapper .ff-el-input--content {
+  position: relative;
+}
+.fluentform-widget-wrapper .ff-el-input--content::before {
+  font-family: remixicon;
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  color: #6D6D6D;
+  font-size: 18px;
+  pointer-events: none;
+}
+.fluentform-widget-wrapper .name-icon .ff-el-input--content::before {
+  content: "\f256";
+}
+.fluentform-widget-wrapper .phone-icon .ff-el-input--content::before {
+  content: "\f15a";
+}
+.fluentform-widget-wrapper .address-icon .ff-el-input--content::before {
+  content: "\ef14";
+}
+.fluentform-widget-wrapper .email-icon .ff-el-input--content::before {
+  content: "\eefc";
+}
+.fluentform-widget-wrapper .dropdown-icon .ff-el-input--content::before {
+  content: "\f021";
+}
+.fluentform-widget-wrapper .message-icon .ff-el-input--content::before {
+  content: "\ec80";
+  bottom: unset;
+  top: 8px;
+}
+.fluentform-widget-wrapper .ff_submit_btn_wrapper .ff-btn-submit {
+  position: relative;
+}
+.fluentform-widget-wrapper .ff_submit_btn_wrapper .ff-btn-submit:after {
+  font-family: remixicon;
+  content: "\ea6c";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  color: inherit;
+  font-size: inherit;
+  transition: all 0.3s ease 0s;
+}
+.fluentform-widget-wrapper .ff_submit_btn_wrapper .ff-btn-submit:hover:after {
+  transform: translateX(3px);
+}
+.fluentform-widget-wrapper.color_primary_scheme .frm-fluent-form .ff-btn-submit {
+  background-color: #c11f4a;
+  color: #ffffff;
+}
+.fluentform-widget-wrapper.color_primary_scheme .frm-fluent-form .ff-btn-submit:hover {
+  background-color: #162b62;
+  color: #071230;
+}
+.fluentform-widget-wrapper.color_secondary_scheme .frm-fluent-form .ff-btn-submit {
+  background-color: #162b62;
+  color: #071230;
+}
+.fluentform-widget-wrapper.color_secondary_scheme .frm-fluent-form .ff-btn-submit:hover {
+  background-color: #c11f4a;
+  color: #ffffff;
+}
+.fluentform-widget-wrapper.color_light_scheme .frm-fluent-form .ff-btn-submit {
+  background-color: #ffffff;
+  color: #071230;
+}
+.fluentform-widget-wrapper.color_light_scheme .frm-fluent-form .ff-btn-submit:hover {
+  color: #ffffff;
+  background-color: #c11f4a;
+}
+.fluentform-widget-wrapper.color_dark_scheme .frm-fluent-form .ff-btn-submit {
+  background-color: #071230;
+  color: #ffffff;
+}
+.fluentform-widget-wrapper.color_dark_scheme .frm-fluent-form .ff-btn-submit:hover {
+  color: #ffffff;
+  background-color: #c11f4a;
+}
+.fluentform-widget-wrapper.color_gradient_scheme .frm-fluent-form .ff-btn-submit {
+  background-image: linear-gradient(90deg, #c11f4a 0%, #162b62 100%);
+  color: #ffffff;
+}
+.fluentform-widget-wrapper.color_gradient_scheme .frm-fluent-form .ff-btn-submit:hover {
+  background-image: linear-gradient(90deg, #162b62 0%, #c11f4a 100%);
+  color: #071230;
+}
+
+form.frm-fluent-form .subscribe-form-custom {
+  position: relative;
+}
+form.frm-fluent-form .subscribe-form-custom .ff-el-group {
+  margin-bottom: 0px;
+}
+form.frm-fluent-form .subscribe-form-custom .wpf_has_custom_css.ff-btn-submit {
+  background-color: #c11f4a;
+  transition: all 0.3s ease 0s;
+}
+form.frm-fluent-form .subscribe-form-custom .wpf_has_custom_css.ff-btn-submit:hover {
+  background-color: #162b62;
+  opacity: 1;
+}
+form.frm-fluent-form .subscribe-form-custom .ff-btn-submit {
+  position: absolute;
+  right: 7px;
+  z-index: 2;
+  top: 7px;
+}
+
+.wpcf7 input[type=file] {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.wpcf7 label {
+  display: block;
+}
+.wpcf7 .ui-widget-content {
+  border: 1px solid #4DC19E;
+  background: #4DC19E;
+  margin-top: 40px;
+}
+.wpcf7 .ui-widget-content .esrscf7top::after {
+  border-color: #00a775 transparent transparent transparent;
+}
+.wpcf7 .ui-widget-content:focus-visible {
+  outline: none;
+}
+.wpcf7 .ui-widget-content .ui-slider-handle.ui-corner-all.ui-state-default:focus-visible {
+  outline: none;
+  border: 1px solid #00a775;
+}
+.wpcf7 .ui-widget-content .ui-slider-handle.ui-corner-all.ui-state-default:hover {
+  border: 1px solid #00a775;
+}
+.wpcf7 img {
+  position: absolute;
+  left: 32px;
+  z-index: 2;
+  top: 18px;
+  width: 20px;
+  height: 20px;
+}
+.wpcf7 .img-control .msg_contact_img {
+  top: 15px;
+}
+.wpcf7 .img-control .wpcf7-textarea {
+  line-height: 30px !important;
+}
+.wpcf7 .form-btn-area .rs-arrrow.dark:after {
+  background: #010101;
+}
+.wpcf7 .form-btn-area .rs-arrrow.dark:before {
+  border-color: transparent transparent transparent #010101;
+}
+.wpcf7 .form-btn-area .rs-arrrow.left:before {
+  right: unset;
+  left: -8px;
+  border-color: transparent #010101 transparent transparent;
+}
+.wpcf7 .form-btn-area .rs-arrrow.left.dark:before {
+  border-color: transparent #010101 transparent transparent;
+}
+
+.wpcf7 .img-control .msg_contact_img {
+  top: 20px;
+}
+
+.contact-home-2 input[type=submit]:hover {
+  opacity: 1;
+}
+
+.contact-home-2 option:not(:checked), .contact-home-2 option:checked {
+  background-color: #fff !important;
+  color: #515261 !important;
+  padding: 12px;
+}
+
+body .contact-home-2 option:hover {
+  background-color: #cb003b !important;
+  color: #fff !important;
+  padding: 12px;
+}
+
+body .contact-home-2 option {
+  margin: 0 !important;
+}
+
+.contact-home-2 textarea {
+  padding: 15px 22px;
+}
+
+.contact-form5 .form-btn-area {
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.contact-form5 .form-btn-area p {
+  position: relative;
+  cursor: pointer;
+  webkit-clip-path: polygon(53% 0%, 100% 1%, 100% 38%, 100% 71%, 96% 100%, 49% 100%, 17% 100%, 0 100%, 0 0, 83% 0) !important;
+  clip-path: polygon(53% 0%, 100% 1%, 100% 38%, 100% 71%, 96% 100%, 49% 100%, 17% 100%, 0 100%, 0 0, 83% 0) !important;
+}
+
+.contact-form5 .form-btn-area p svg {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  left: 98px;
+  margin: 0 auto;
+  top: 20px;
+  fill: #fff;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.contact-form5 .form-btn-area:hover svg {
+  transform: rotate(45deg);
+}
+.contact-form5 .form-btn-area:hover:after {
+  transform: translate3d(100%, 0, 0);
+}
+
+.contact-form5 .form-btn-area p svg path {
+  fill: #fff;
+}
+
+.contact-form5 .form-btn-area p input[type=submit] {
+  padding-left: 0px !important;
+}
+
+.contact-home-2 .wpcf7 em.select-full:after {
+  content: "\ea4d";
+  top: 28px;
+  color: #fff;
+}
+
+.wpcf7 .col-sm-12, .wpcf7 .col-sm-6 {
+  position: relative;
+}
+.wpcf7 .col-sm-12 i, .wpcf7 .col-sm-6 i {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  font-size: 18px;
+  z-index: 9;
+  color: rgba(69, 69, 69, 0.7411764706);
+  line-height: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.wpcf7 .free_consultation_form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-page-custom .wpcf7-not-valid-tip,
+.home-contact-page .wpcf7-not-valid-tip {
+  color: red;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.contact-page-custom input.wpcf7-form-control.has-spinner.wpcf7-submit {
+  width: 100%;
+}
+
+.contact-us-page .wpcf7-form .col-sm-12,
+.contact-us-page .wpcf7-form .col-sm-6 {
+  position: relative !important;
+}
+
+.contact-us-page .wpcf7-form .col-sm-12 i,
+.contact-us-page .wpcf7-form .col-sm-6 i {
+  position: absolute;
+  top: 24px;
+  left: 35px;
+  font-size: 20px;
+  z-index: 9;
+  color: rgba(69, 69, 69, 0.7411764706);
+}
+
+.contact-us-page .wpcf7 i.ri-mail-line, .contact-us-page .wpcf7 i.ri-phone-fill {
+  top: 24px !important;
+}
+
+.contact-us-page .wpcf7 i.ri-edit-line {
+  top: 25px !important;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 10px 0 0 6px;
+  border: 0;
+}
+
+.support-contact-icon .ri-mail-line {
+  top: 28px !important;
+}
+
+.support-contact-icon .wpcf7 .col-sm-12 i.ri-edit-line {
+  top: 32px !important;
+}
+
+.contact-home4 .wpcf7 .form-btn-area .btn_area {
+  position: relative;
+}
+
+.contact-home4 .wpcf7 .btn_area::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  border-radius: 6px;
+  transition: 0.5s;
+  z-index: -1;
+  border-style: dashed;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(33, 44, 74, 0.9019607843);
+  bottom: -26px;
+  left: 7px;
+  width: 100%;
+  height: 230%;
+}
+
+.contact-home4 .wpcf7 .btn_area:hover::before {
+  transform: translate3d(-8px, -8px, 0);
+  opacity: 0;
+}
+
+.contact-home-2 .form-btn-area {
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+.contact-home-2 .form-btn-area:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+.contact-home-2 .form-btn-area:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #000 !important;
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.contact-home-2 .form-btn-area i {
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.contact-home-2 .form-btn-area:hover i {
+  right: 30px;
+}
+
+.contact-team-single .select-full:after {
+  top: 28px;
+  color: #fff;
+}
+.contact-team-single option:not(:checked),
+.contact-team-single option:checked {
+  background-color: #fff !important;
+  color: #515261 !important;
+  padding: 12px;
+}
+.contact-team-single option {
+  margin: 0 !important;
+}
+.contact-team-single option:hover {
+  background-color: #cb003b !important;
+  color: #fff !important;
+  padding: 12px;
+}
+.contact-team-single textarea {
+  padding: 15px 22px;
+}
+.contact-team-single input[type=submit]:hover {
+  opacity: 1;
+}
+.contact-team-single .form-btn-area {
+  font-family: "Oswald";
+  font-weight: 500;
+}
+.contact-team-single .form-btn-area i {
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+.contact-team-single .form-btn-area:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #000 !important;
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.contact-team-single .form-btn-area:hover i {
+  right: 30px;
+}
+.contact-team-single .form-btn-area:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+.fluentform .ff_btn_style:hover {
+  opacity: unset !important;
+}

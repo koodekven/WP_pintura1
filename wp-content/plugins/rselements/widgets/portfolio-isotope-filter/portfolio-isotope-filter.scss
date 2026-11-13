@@ -1,0 +1,152 @@
+.rs-isotope-portfolio .filters ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  
+  .rs-isotope-portfolio .filters ul li {
+    color: #FFFFFF;
+    background-color: #00457A;
+    padding: 10px 22px 10px 22px;
+    border-radius: 2px 2px 2px 2px !important;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+  }
+  
+  .rs-isotope-portfolio .filters ul li.is-checked, .filters ul li:hover {
+    background-color: #D52925;
+    color: #fff;
+  }
+  
+  .rs-isotope-portfolio .filters ul li:last-child {
+    margin-right: 0;
+  }
+  
+
+  .rs-isotope-portfolio .portfolio-item {
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+  }
+  
+  .rs-isotope-portfolio .portfolio-item {
+    min-height: 263px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s linear 0s;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    object-fit: cover;
+    &::before{
+      content: "";
+      position: absolute;
+      background: #00457AC7;
+      left: 0;
+      right: 0;
+      height: 0;
+      transition: all .5s ease;
+      bottom: 0;
+    }
+    &:hover{
+      &::before{
+        height: 100%;
+      }
+      .portfolio-content { 
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+
+  .rs-isotope-portfolio .portfolio-item:hover .content-overlay {
+    opacity: 1;
+  }
+
+ 
+    .rs-isotope-portfolio .portfolio-item .portfolio-content {      
+      text-align: center;
+      color: #fff;
+      padding: 46px;
+      position: relative;
+      z-index: 1;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all .5s ease;
+    }
+    
+
+  .rs-isotope-portfolio .portfolio-item .portfolio-content .p-title {
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+  }
+  .rs-isotope-portfolio .portfolio-item img {
+  width: 100%;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .rs-isotope-portfolio .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+
+ 
+  
+  .rs-isotope-portfolio .portfolio-item .portfolio-content .p-title {
+    margin-bottom: 0px;
+  }
+  
+  .rs-isotope-portfolio .portfolio-item .portfolio-content .p-title a {
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    transition: all .3s linear 0s;
+  }
+  
+  .rs-isotope-portfolio .portfolio-item .portfolio-content .p-category {
+    margin: 0px;
+  }
+  
+  .rs-isotope-portfolio .portfolio-item .portfolio-content .p-category a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+
+.rs-isotope-portfolio .portfolio-item .portfolio-overlay .portfolio-content .portfolio-inner {
+    position: relative;
+    z-index: 3;
+}
+
+.rs-isotope-portfolio .portfolio-content .arrow-btn{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 10px auto 0;
+  background: #ffffff7a;
+  border-radius: 50%;
+  line-height: 40px;
+  i{
+    font-size: 22px;
+    color: #fff;
+    top: 1px;
+    left: 0;
+  }
+}

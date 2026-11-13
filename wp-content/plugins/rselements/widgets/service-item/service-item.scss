@@ -1,0 +1,98 @@
+@import '../../common';
+
+.service-item-area {
+	.service-item {
+		background-color: #f2f2f2;
+		padding: 20px 30px 20px 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 30px;
+		border-radius: 6px;
+		transition: $transition;
+		box-shadow: 0px 4px 20px rgba(21, 21, 49, 0.1);
+		border: 2px solid #FFFFFF;
+		position: relative;
+		z-index: 1;
+    	overflow: hidden;
+		&:first-child {
+			margin-top: 0px;
+		}
+
+		.service-icon-title {
+			color: #071230;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			span {
+				margin-left: 10px;
+				transition: $transition;
+			}
+			i{
+				transition: $transition;
+			}
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		.arrow-btn {
+			font-size: 20px;
+			color:#071230;
+			font-weight:600;
+			transition: $transition;
+		}
+		&:before  {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			background: $primaryColor;
+			height: 150px;
+			width: 470px;
+			border-radius: 50%;
+			top: 100%;
+			left: 100%;
+			transition: all 0.4s;
+		}
+		&:hover{
+			&:before {
+				top: -30px;
+    			left: -50px;
+			}
+
+			.arrow-btn {
+				transform: translateX(10px);
+			}
+		}
+		path{
+			transition: all 0.4s;
+		}
+		&:first-child {
+			background-color: $primaryColor;
+			span ,i {
+				color: #fff;
+			}
+			svg {
+				path {
+					fill:#fff;
+				}
+			}
+			
+		}
+	
+	}
+}
+
+.service-item-area .service-item:hover {
+	span ,i {
+		color: #fff;
+	}
+	svg {
+		path {
+			fill:#fff;
+		}
+	}
+}
+
+

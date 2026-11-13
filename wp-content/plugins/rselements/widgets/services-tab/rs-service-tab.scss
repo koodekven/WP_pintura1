@@ -1,0 +1,261 @@
+@import '../../common';
+
+.rs-addon-services-tab {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    .services-tab-inner {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 33.33%;
+        padding: 27px 34px 27px 34px;
+        background-color: #FFFFFF;
+        border-radius: 3px 3px 0px 0px;
+        overflow: hidden;
+        transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        background-size: 100% auto;
+        position: relative;
+        &.active {
+            &:before {
+                position: absolute;
+                content: "";
+                background-color: transparent;
+                background-image: linear-gradient(90deg, #FD644F 0%, rgba(242, 142, 38, 0.9960784314) 100%);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                bottom: 0;
+            }
+           
+
+            .numbering {
+                z-index: 2;
+                span {
+                    color:#fff;
+                }
+                
+            }
+            .content_part {
+                z-index: 2;
+                .title {
+                    color:#fff;
+                }
+            }
+
+        }
+
+        .numbering {
+            color: #002336!important;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        .content_part {
+            padding: 0px 0px 0px 20px;
+
+            .title {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 30px;
+                color: #071230;
+                font-family: "Inter", sans-serif;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.rs-addon-services-tab-hovereffect {
+    display: flex;
+    gap: 30px;
+    .services-inner{
+        position: relative;
+        overflow: hidden;
+        .content_part {
+             position: absolute;
+             left: 0px;
+             bottom: 0px;
+             -webkit-transition: all 500ms ease;
+             transition: all 500ms ease;
+             padding: 75px 75px 35px 35px;
+             background-color: $primaryColor;
+             .icon_style {
+                 img {
+                     width: 42px;
+                     height: 50px;
+                 }
+             }
+         }
+         .rs-service-shape-img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            img {
+                width: 280px;
+            }
+         }
+         .content_part_hover { 
+             position: absolute;
+             top: 30px;
+             left: 30px;
+             right: 30px;
+             bottom: 30px;
+             margin: 0 auto;
+             padding: 45px 30px;
+             border-radius: 5px;
+             overflow: hidden;
+             transition: all .5s ease;
+             -webkit-transform: scale(0);
+             transform: scale(0);
+             > * {
+                position: relative;
+                z-index: 1;
+             }
+             .service-icon-title {
+                 display: flex;
+                 align-items: center;
+                 margin-bottom: 25px;
+                 gap: 18px;
+                 .title {
+                     margin-bottom: 0px;
+                 }
+             }
+             .icon_style {
+                 img {
+                     width: 50px;
+                     height: 50px;
+                 }
+             }
+             .btn-part {
+                 .services-btn {
+                     position: relative;
+                     display: inline-block!important;
+                     &::before {
+                         position: absolute;
+                         content: "";
+                         left: 0;
+                         width: 0%;
+                         height: 1px;
+                         bottom: 0;
+                         background: currentColor;
+                         -webkit-transition: $transition;
+                         transition: $transition;
+                     }
+                     &:hover {
+                         &:before {
+                             width: 100%;
+                         }
+
+                         i {
+                             -webkit-transform: rotate(0deg);
+                             transform: rotate(0deg);
+                         }
+                     }
+
+                     i {
+                         -webkit-transform: rotate(-45deg);
+                         transform: rotate(-45deg);
+                         -webkit-transition: $transition;
+                         transition: $transition;
+                         margin-left: 8px;
+                         font-size: 15px;
+
+                     }
+                 }
+             }
+             &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $primaryColor;
+                opacity: 0.9;
+             }
+         }
+    }
+    &:hover .services-inner:hover,
+    &:not(:hover) .active {
+        .content_part_hover {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        .content_part {
+            opacity: 0;
+            visibility: hidden;
+            bottom: -220px;
+        }
+        .rs-service-shape-img {
+            visibility: hidden;
+            opacity: 0;
+            bottom: -220px;
+        }
+    }
+}
+
+.rstab-main {
+    .tab-content{
+        .content--left-area{
+            .desc_btn_wrapper{
+                .rs-btn.first-one{
+                    a.rs_button{
+                        transition: $transition;
+                        i{
+                            transition: $transition;
+                        }
+                        &:hover{
+                            i{
+                                margin-left: 5px;
+                            }
+                            svg{
+                                transform: translate3d(8px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                transform-style:preserve-3d;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Window Home Tab */
+.window-tab-content-list-wrapper{
+    margin: 16px 0;
+    .window-tab-content-list{
+        list-style: none;
+        margin: 0;
+        li{
+            position: relative;
+            padding-left: 35px;
+            margin: 7px 0;
+            display: flex;
+            align-items: center;
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 4px;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                // background-image: url(./white-tick.png);
+                background: url("data:image/svg+xml,%3Csvg width='450' height='396' viewBox='0 0 450 396' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M205.295 395.751C203.937 395.751 202.593 395.47 201.349 394.925C200.105 394.381 198.987 393.585 198.065 392.588L3.12382 181.717C1.82429 180.312 0.96279 178.557 0.644746 176.67C0.326702 174.782 0.565913 172.842 1.33311 171.088C2.1003 169.334 3.36219 167.842 4.96434 166.794C6.5665 165.746 8.4394 165.188 10.3539 165.188H104.188C105.597 165.188 106.989 165.49 108.271 166.074C109.553 166.659 110.695 167.511 111.62 168.574L176.77 243.527C183.811 228.476 197.441 203.415 221.359 172.879C256.718 127.734 322.489 61.3403 435.015 1.4048C437.189 0.246616 439.72 -0.0539779 442.105 0.562375C444.491 1.17873 446.559 2.66722 447.901 4.73394C449.243 6.80065 449.761 9.29536 449.353 11.7254C448.945 14.1555 447.641 16.3443 445.698 17.8597C445.268 18.1954 401.882 52.3616 351.95 114.943C305.996 172.533 244.909 266.702 214.85 388.272C214.322 390.408 213.093 392.305 211.361 393.662C209.629 395.018 207.492 395.755 205.292 395.755L205.295 395.751Z' fill='white'/%3E%3C/svg%3E") center/cover no-repeat;
+                background-size: 10px;
+                background-color: $primaryColor;
+                border-radius: 5%;
+                box-shadow: 0 0 18px rgba(0,0,0,.1);
+            }
+          }
+      }
+
+}

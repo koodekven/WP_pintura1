@@ -1,0 +1,246 @@
+@import '../../common';
+// Style One For Fix Hero
+.rs-portfolio-style1 {
+	.portfolio-details {
+		padding: 0;
+		.p-category {
+			margin: 0 0 10px;
+		}
+		.p-title {
+			margin: 0;
+			font-size: 35px;
+			line-height: 45px;
+			font-weight: 600;
+		}
+	}
+	.portfolio-item {
+        position: relative;
+        border-radius: 2px;
+        transition: 0.4s;
+		.portfolio-img {
+			img{
+                border-radius: 2px;
+            }
+		}
+        .portfolio-details{
+            position: absolute;
+            bottom: 0;
+            transform: translateY(-20px);
+            left: 20px;
+            opacity: 0;
+            transition: 0.4s;
+            .p-category{
+                margin: 0;
+                a{
+                    display: inline-block;
+                    color: $whiteColor;
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    transition: 0.3s ease all;
+                    background: $primaryColor;
+                    padding: 7px 17px;
+                    border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    -o-border-radius: 2px;
+                    &:hover{
+                        background: $primaryColor;
+                        opacity: 0.9;
+                    }
+                }
+            }
+            .p-title{
+                margin: 0;
+                a{
+                    color: $titleColor;
+                    font-size: 24px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    transition: 0.3s ease all;
+                    margin-top: 6px;
+                    background: $whiteColor;
+                    padding: 10px 10px 10px 18px;
+                    border-radius: 2px;
+                    display: inline-block;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    -o-border-radius: 2px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .title-icons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        background: #f2f2f2;
+                        border-radius: 50%;
+                        margin-left: 40px;
+                        transition: all 0.3s ease 0s;
+                        svg path{
+                            fill: $primaryColor;
+                        }
+                        i {
+                            top: unset;
+                            font-size: 18px;
+                            color:$primaryColor;
+                          }
+
+                          &:hover{
+                            background: $primaryColor;
+                            svg path{
+                                fill: $whiteColor;
+                            }
+                          }
+                      }
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+            
+        }
+        &:hover{
+            .portfolio-details{
+                opacity: 1;
+                visibility: visible;
+            }
+            
+        }
+	}
+    
+}
+
+.rs-portfolio-style2 {
+	.portfolio-details {
+		padding: 0;
+		.p-category {
+			margin: 0 0 10px;
+		}
+		.p-title {
+			margin: 0;
+			font-size: 35px;
+			line-height: 45px;
+			font-weight: 600;
+		}
+	}
+	.portfolio-item.rsportfolio-grid-style2 {
+        padding: 0px!important;
+        position: relative;
+        border-radius: 4px!important;
+        transition: 0.4s;
+        height: unset!important;
+        &:before {
+            content: "";
+            position: absolute;
+            opacity: 0.699999988079071;
+            background: #09496A;
+            left: 0;
+            right: 0;
+            height: 0;
+            transition: all 0.5s ease;
+            bottom: 0;
+            pointer-events: none;
+
+        }
+        &:hover {
+            &:before {
+                height: 100%;
+            }
+        }
+		.portfolio-img {
+			img{
+                border-radius: 2px;
+            }
+		}
+        .portfolio-details{
+            position: absolute;
+            bottom: 0;
+            transform: translateY(-25px);
+            opacity: 0;
+            transition: 0.4s;
+            width: 100%;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .p-category{
+                margin: 0;
+                a{
+                    display: inline-block;
+                    color: $whiteColor;
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    transition: 0.3s ease all;
+                }
+            }
+            .p-title{
+                margin: 0;
+                a{
+                    color: $primaryColor;
+                    font-size: 24px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    transition: 0.3s ease all;
+                    margin-top: 6px;
+                    display: inline-block;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+
+            .title-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: #f2f2f2;
+                border-radius: 50%;
+                margin-left: 40px;
+                transition: all 0.3s ease 0s;
+                svg {
+                    path{
+                        fill: $primaryColor;
+                    }
+                }
+                i {
+                    top: unset;
+                    font-size: 18px;
+                    color:$primaryColor;
+                }
+
+                &:hover{
+                    background: $primaryColor;
+                    svg {
+                        path{
+                            fill: $whiteColor;
+                        }
+                    }
+                }
+            }
+            
+        }
+        &:hover{
+            .portfolio-details{
+                opacity: 1;
+                visibility: visible;
+            }
+            
+        }
+	}
+    
+}

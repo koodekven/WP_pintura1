@@ -1,0 +1,123 @@
+@import '../../common';
+.rs-iconbox-area {
+	.box-inner {
+		position: relative;
+		transition: 0.4s;
+		overflow: hidden;
+		.rs-badge {
+			position: absolute;
+			background: #010d14;
+			padding: 3px 8px 0;
+			color: #ffffff;
+			top: 5px;
+			left: 5px;
+			z-index: 1;
+			transform: rotate(0deg);
+		}
+		.icon-area {
+			display: inline-block;
+			color: #010d14;
+			transition: all ease .3s;
+			i {
+				transition: all ease .3s;
+				font-size: 50px;
+			}
+		}
+		.text-area {
+			padding: 10px 0 0;
+			position: relative;
+			.iconbox-title {
+				position: relative;
+				.title {
+					font-size: 20px;
+					margin: 0;
+					color: #121933;
+					font-weight: 500;
+					line-height: 1.5;
+					a {
+						text-decoration: none !important;
+						color: #121933;
+						&:hover {
+							color: #1273eb;
+						}
+					}
+					&:before {
+						content: "01.";
+						font-size: 50px;
+						font-weight: bold;
+						color: #010d14;
+						position: absolute;
+						transition: all .3s ease 0s;
+						top: 0;
+						left: 0;
+						z-index: 9;
+					}
+				}
+			}
+			.services-txt {
+				font-size: 16px;
+				margin: 0;
+			}
+		}
+		.services-btn-part {
+			margin: 15px 0 0;
+			.services-btn {
+				position: relative;
+				display: inline-block;
+				color: #2b59ff;
+				transition: all ease .3s;
+				i {
+					transition: all ease .3s;
+				}
+				&:hover {
+					color: #010d14;
+				}
+			}
+			.services-btn.icon-after {
+				span {
+					float: left;
+				}
+				i {
+					margin-left: 10px;
+					transition: 0.4s;
+				}
+			}
+			.services-btn.icon-before {
+				span {
+					float: right;
+				}
+				i {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	&.horizontal {
+		.box-inner {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.service-arrow .icon-area  {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 87% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 88%, 87% 100%, 0% 100%);
+}
+
+.rs-iconbox-area .box-inner .text-area {
+	padding-top: 0px;
+}
+.service-arrow .rs-iconbox-area .icon-area ,.choose-us-iconbox .rs-iconbox-area .icon-area {
+	overflow: hidden;
+	transition: all ease 0.3s;
+}
+.service-arrow .rs-iconbox-area .icon-area img,.choose-us-iconbox .rs-iconbox-area .icon-area img  { 
+	transition: all ease 0.3s;
+}
+.service-arrow .rs-iconbox-area .icon-area:hover  img,.choose-us-iconbox .rs-iconbox-area .icon-area:hover
+ img {
+	transform: scale(1.1);
+}
+
+

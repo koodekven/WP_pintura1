@@ -1,0 +1,45 @@
+@import '../../common';
+
+.rs-cta {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	.cta-content {
+		float: left;
+		width: 80%;
+		text-align: left;
+		order: unset;
+		.cta-title {
+			h3.title {
+				margin: 0 0 10px;
+			}
+		}
+		.cta-text {
+			.desc {
+				margin: 0;
+			}
+		}
+	}
+	.rs-btn {
+		width: 20%;
+		float: right;
+		text-align: right;
+		order: unset;
+		.readon {
+			line-height: 1;
+			color: #fff;
+			background-color: #010d14;
+			padding: 15px 35px;
+			font-size: 17px;
+			border-radius: 0;
+			&:hover {
+				background: #2b59ff;
+			}
+			i {
+				margin: 0;
+				transform: translateX(5px);
+				transition: all ease .3s;
+			}
+		}
+	}
+}

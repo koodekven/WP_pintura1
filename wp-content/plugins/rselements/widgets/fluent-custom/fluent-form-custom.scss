@@ -1,0 +1,549 @@
+@import '../../common';
+
+.fluentform-widget-wrapper {
+	.fluentform {
+		.ff_btn_style {
+			&:hover {
+				opacity: unset !important;
+			}
+		}
+	}
+	.ff-el-group {
+		select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		&.dropdown-icon {
+			.ff-el-input--content {
+				position: relative;
+				&:after {
+					position: absolute;
+					font-family: remixicon;
+					content: "\ea4e";
+					right: 18px;
+					top: 15px;
+					display: flex;
+					align-items: center;
+					z-index: 1;
+					color: inherit;
+					pointer-events: none;
+				}
+			}
+		}
+
+	}
+	.ff-el-input--content {
+		position: relative;
+		&::before {
+			font-family: remixicon;
+			position: absolute;
+			left: 18px;
+			top: 15px;
+			display: flex;
+			align-items: center;
+			z-index: 2;
+			color: $bodyColor;
+			font-size: 18px;
+			pointer-events: none;
+		}
+	}
+	.name-icon {
+		.ff-el-input--content {
+			&::before {
+				content: "\f256";
+			}
+		}
+	}
+	.phone-icon {
+		.ff-el-input--content {
+			&::before {
+				content: "\f15a";
+			}
+		}
+	}
+	.address-icon {
+		.ff-el-input--content {
+			&::before {
+				content: "\ef14";
+			}
+		}
+	}
+	.email-icon {
+		.ff-el-input--content {
+			&::before {
+				content: "\eefc";
+			}
+		}
+	}
+	.dropdown-icon {
+		.ff-el-input--content {
+			&::before {
+				content: "\f021";
+			}
+		}
+	}
+	.message-icon {
+		.ff-el-input--content {
+			&::before {
+				content: "\ec80";
+				bottom: unset;
+				top: 8px;
+			}
+		}
+	}
+	.ff_submit_btn_wrapper{
+		.ff-btn-submit {
+			position: relative;
+			&:after {
+				font-family: remixicon;
+				content: "\ea6c";
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				display: flex;
+				align-items: center;
+				z-index: 2;
+				color: inherit;
+				font-size: inherit;
+				transition: $transition;
+			}
+			&:hover {
+				&:after {
+					transform: translateX(3px);
+				}
+			}
+		}
+	}
+	&.color_primary_scheme {
+		.frm-fluent-form {
+			.ff-btn-submit {
+				background-color: $primaryColor;
+				color: $whiteColor;
+				&:hover {
+					background-color: $secondaryColor;
+					color: $titleColor;
+				}
+			}
+		}
+	}
+	&.color_secondary_scheme {
+		.frm-fluent-form {
+			.ff-btn-submit {
+				background-color: $secondaryColor;
+				color: $titleColor;
+				&:hover {
+					background-color: $primaryColor;
+					color: $whiteColor;
+				}
+			}
+		}
+	}
+	&.color_light_scheme {
+		.frm-fluent-form {
+			.ff-btn-submit {
+				background-color: $whiteColor;
+				color: $titleColor;
+				&:hover {
+					color: $whiteColor;
+					background-color: $primaryColor;
+				}
+			}
+		}
+	}
+	&.color_dark_scheme {
+		.frm-fluent-form {
+			.ff-btn-submit {
+				background-color: $titleColor;
+				color: $whiteColor;
+				&:hover {
+					color: $whiteColor;
+					background-color: $primaryColor;
+				}
+			}
+		}
+	}
+	&.color_gradient_scheme {
+		.frm-fluent-form {
+			.ff-btn-submit {
+				background-image: linear-gradient(90deg, $primaryColor 0%, $secondaryColor 100%);
+				color: $whiteColor;
+				&:hover {
+					background-image: linear-gradient(90deg, $secondaryColor 0%, $primaryColor 100%);
+					color: $titleColor;
+				}
+			}
+		}
+	}
+}
+
+// Newslatter Form Footer
+form.frm-fluent-form {
+	.subscribe-form-custom {
+		position: relative;
+		.ff-el-group {
+			margin-bottom: 0px;
+		}
+		.wpf_has_custom_css {
+			&.ff-btn-submit {
+				background-color:$primaryColor;
+				transition: $transition;
+				&:hover { 
+					background-color:$secondaryColor;
+					opacity: 1;
+				}
+			}
+		}
+		.ff-btn-submit {
+			position: absolute;
+			right: 7px;
+			z-index: 2;
+			top: 7px;
+		}
+	}
+}
+
+.wpcf7 {
+	input[type="file"] {
+		cursor: pointer;
+		margin-bottom: 30px;
+	}
+	label {
+		display: block;
+	}
+	.ui-widget-content {
+		border: 1px solid #4DC19E;
+		background: #4DC19E;
+		margin-top: 40px;
+	}
+	.ui-widget-content .esrscf7top::after{
+		border-color: #00a775 transparent transparent transparent;
+	}
+	.ui-widget-content:focus-visible{
+		outline: none;
+	}
+	.ui-widget-content .ui-slider-handle.ui-corner-all.ui-state-default:focus-visible{
+		outline: none;
+		border: 1px solid #00a775;
+	}
+	.ui-widget-content .ui-slider-handle.ui-corner-all.ui-state-default:hover{
+		border: 1px solid #00a775;
+	}
+
+	img {
+		position: absolute;
+		left: 32px;
+		z-index: 2;
+		top: 18px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.img-control {
+		.msg_contact_img {
+			top: 15px;
+		}
+		.wpcf7-textarea {
+			line-height: 30px!important;
+		}
+		
+	}
+
+	.form-btn-area {
+		.rs-arrrow{
+			&.dark {
+				&:after {
+					background: #010101;
+				}
+				&:before {
+					border-color: transparent transparent transparent #010101;
+				}
+			}
+			&.left {
+				&:before {
+					right: unset;
+					left: -8px;
+					border-color: transparent #010101 transparent transparent;
+				}
+				&.dark {
+					&:before {
+						border-color: transparent #010101 transparent transparent;
+					}
+				}  
+			}
+			
+		}
+	}
+
+}
+
+.wpcf7 .img-control .msg_contact_img {
+	top: 20px;
+}
+.contact-home-2 input[type=submit]:hover {
+	opacity: 1;
+}
+.contact-home-2 option:not(:checked),.contact-home-2 option:checked { 
+	background-color: #fff!important;
+	color: #515261!important;
+	padding: 12px;
+}
+body .contact-home-2 option:hover {
+	background-color: #cb003b!important;
+	color: #fff!important;
+	padding: 12px;
+ }
+
+ body .contact-home-2 option {
+	margin: 0!important;
+ }
+
+.contact-home-2 textarea {
+	padding: 15px 22px;
+}
+.contact-form5 .form-btn-area {
+	cursor: pointer;
+	transition: $transition;
+}
+.contact-form5 .form-btn-area p {
+	position: relative;
+	cursor: pointer;
+	webkit-clip-path: polygon(53% 0%, 100% 1%, 100% 38%, 100% 71%, 96% 100%, 49% 100%, 17% 100%, 0 100%, 0 0, 83% 0) !important;
+    clip-path: polygon(53% 0%, 100% 1%, 100% 38%, 100% 71%, 96% 100%, 49% 100%, 17% 100%, 0 100%, 0 0, 83% 0) !important;
+}
+.contact-form5 .form-btn-area p  svg {
+	position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    left: 98px;
+    margin: 0 auto;
+    top: 20px;
+    fill: #fff;
+    display: inline-block;
+	transition: $transition;
+	
+}
+
+.contact-form5 .form-btn-area:hover  {
+	svg {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: translate3d(100%,0,0);
+	}
+}
+
+.contact-form5 .form-btn-area p  svg path { 
+	fill: #fff;
+}
+
+.contact-form5 .form-btn-area p input[type=submit] {
+	padding-left: 0px!important;
+}
+.contact-home-2 {
+	.wpcf7 {
+		em.select-full:after {
+			content: "\EA4D";
+			top: 28px;
+			color: #fff;
+		}
+	}
+}
+.wpcf7 .col-sm-12 ,.wpcf7 .col-sm-6{
+	position: relative;
+	i {
+		position: absolute;
+		top: 25px;
+		left: 35px;
+		font-size: 18px;
+		z-index: 9;
+		color: #454545BD;
+		line-height: 0;
+		height: 0;
+		pointer-events: none;
+	}
+}
+.wpcf7 .free_consultation_form{
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact-page-custom .wpcf7-not-valid-tip,
+.home-contact-page .wpcf7-not-valid-tip {
+	color: red;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+	
+.contact-page-custom input.wpcf7-form-control.has-spinner.wpcf7-submit {
+	width: 100%;
+}
+
+.contact-us-page .wpcf7-form .col-sm-12,
+.contact-us-page .wpcf7-form .col-sm-6 {
+	position: relative !important;
+}
+
+.contact-us-page .wpcf7-form .col-sm-12 i,
+.contact-us-page .wpcf7-form .col-sm-6 i {
+	position: absolute;
+	top: 24px;
+	left: 35px;
+	font-size: 20px;
+	z-index: 9;
+	color: rgba(69, 69, 69, 0.7411764706);
+}
+
+.contact-us-page .wpcf7 i.ri-mail-line,.contact-us-page .wpcf7 i.ri-phone-fill {
+	top: 24px!important;
+}
+
+.contact-us-page .wpcf7 i.ri-edit-line {
+	top: 25px!important;
+}
+	
+.wpcf7 form .wpcf7-response-output {
+	margin: 10px 0 0 6px;
+	border: 0;
+}
+
+.support-contact-icon .ri-mail-line {
+	top: 28px !important;
+}
+
+.support-contact-icon .wpcf7 .col-sm-12 i.ri-edit-line { 
+    top: 32px!important;
+}
+
+.contact-home4 .wpcf7 .form-btn-area .btn_area {
+	position: relative;
+}
+
+.contact-home4 .wpcf7 .btn_area::before { 
+	position: absolute;
+    content: "";
+    right: 0;
+    border-radius: 6px;
+    transition: 0.5s;
+    z-index: -1;
+    border-style: dashed;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(33, 44, 74, 0.9019607843);
+    bottom: -26px;
+    left: 7px;
+    width: 100%;
+    height: 230%;
+}
+
+.contact-home4 .wpcf7 .btn_area:hover::before {
+	transform: translate3d(-8px, -8px, 0);
+	opacity: 0;
+}
+
+.contact-home-2 .form-btn-area {
+	font-family: 'Oswald';
+	font-weight: 500;
+}
+.contact-home-2 .form-btn-area:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+.contact-home-2 .form-btn-area:before {
+	display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: "";
+    color: #000 !important;
+    background: transparent;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.contact-home-2 .form-btn-area i {
+    
+    transition: $transition;
+    -webkit-transition: $transition;
+}
+.contact-home-2 .form-btn-area:hover i {
+	right: 30px;
+}
+
+
+// Contact Css Team Single Form
+.contact-team-single {
+	.select-full {
+		&:after {
+			top: 28px;
+			color: #fff;
+		}
+	}
+	option:not(:checked),
+	option:checked { 
+		background-color: #fff!important;
+		color: #515261 !important;
+		padding: 12px;
+	}
+	option {
+		margin: 0 !important;
+		&:hover {
+			background-color: #cb003b !important;
+			color: #fff !important;
+			padding: 12px;
+		}
+	}
+	textarea {
+		padding: 15px 22px;
+	}
+	input[type=submit]:hover {
+		opacity: 1;
+	}
+	.form-btn-area {
+		font-family: 'Oswald';
+		font-weight: 500;
+		i {
+			transition: $transition;
+    		-webkit-transition: $transition;
+		}
+		&:before {
+			display: block;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 100%;
+			width: 0px;
+			z-index: -1;
+			content: "";
+			color: #000 !important;
+			background: transparent;
+			transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+		}
+		&:hover {
+			i {
+				right: 30px;
+			}
+			&:before {
+				left: 0%;
+				right: auto;
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+// Default Flunt form Css Changing
+
+.fluentform{
+	.ff_btn_style{
+		&:hover{
+			opacity: unset !important;
+		}
+	}
+} 

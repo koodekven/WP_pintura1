@@ -1,0 +1,40 @@
+.elementor-image-gallery .gallery-item .gallery-icon a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.elementor-image-gallery .gallery-item .gallery-icon a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: #010d14;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.elementor-image-gallery .gallery-item .gallery-icon a:before {
+  content: "+";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  color: #fff;
+  z-index: 2;
+  font-size: 50px;
+  font-weight: 200;
+}
+.elementor-image-gallery .gallery-item .gallery-icon a:hover:after {
+  opacity: 0.75;
+  visibility: visible;
+  bottom: 0;
+}
+.elementor-image-gallery .gallery-item .gallery-icon a:hover:before {
+  visibility: visible;
+  opacity: 1;
+}

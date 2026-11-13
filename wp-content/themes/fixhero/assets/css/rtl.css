@@ -1,0 +1,247 @@
+html {
+  direction: rtl;
+}
+
+.wpcf7-form {
+  direction: rtl;
+}
+
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+  text-align: right;
+}
+body.rtl .rs-wrap-summery .woocommerce-product-gallery.images {
+  padding-right: 0px;
+  padding-left: 40px;
+}
+body.rtl .woocommerce.single-product form.cart .button {
+  margin-left: 10px;
+}
+body.rtl .rs-blog .blog-item:not(.rs-flat) .blog-button a:before {
+  transform: scaleX(-1);
+}
+body.rtl .hfe-layout-vertical .right-arrow-style2 ul .menu-item a:after {
+  transform: scaleX(-1) translate(-50%, -50%) !important;
+}
+body.rtl .hfe-layout-vertical .right-arrow-style2 ul .menu-item a:hover:after {
+  transform: scaleX(-1) translate(0%, -50%) !important;
+}
+body.rtl blockquote::before,
+body.rtl .rs-addon-services.style1 .services-inner .services-btn svg,
+body.rtl .service-item-area .service-item .arrow-btn {
+  transform: scaleX(-1) !important;
+}
+body.rtl blockquote::before {
+  left: auto;
+  right: 10px;
+}
+body.rtl .check-arrow li:before {
+  left: auto;
+  right: 0;
+}
+body.rtl .rs-addon-cost-calculator .cost_calculator .area-ctrol.emergency-calculate .emergency-inner input {
+  margin-right: 0px;
+  margin-left: 15px;
+}
+body.rtl .rs-service-areas .service-item .service-item-inner .rs-service-thumb .rs-service-categorys {
+  left: unset;
+  right: 35px;
+}
+body.rtl .rs-service-areas .service-item .service-item-inner .service-normal-text ul li.rs-service-location::before {
+  left: unset;
+  right: -17px;
+}
+body.rtl .rs-price-table.style-1 .rs-pricing-table-price.display-inline .rs-pricing-table-period:before {
+  right: 5px;
+}
+body.rtl div.rs-accordion-area .accordion-header .elementor-accordion-icon {
+  left: unset;
+  right: 10px;
+}
+body.rtl .rs-price-table.style-1 .rs-pricing-table-price.display-inline .rs-pricing-table-period {
+  padding-left: unset;
+  padding-right: 20px;
+}
+body.rtl .team-grid-style8 .team-inner-wrap .image-wrap .plus_team .social-icons1 {
+  right: -2px;
+}
+body.rtl .team-grid-style8 .team-inner-wrap .image-wrap .plus_team {
+  top: 17px;
+  right: unset;
+  left: 20px;
+}
+body.rtl .rs-testimonial .testimonial-item .testimonial-information .testimonial-name {
+  margin-left: 0;
+  margin-right: 12PX;
+}
+body.rtl .rs-testimonial--right .testimonial-information {
+  padding-right: 0px;
+  padding-left: 15px;
+}
+body.rtl .rs-testimonial .testimonial-item .quote-icon {
+  width: 50px;
+  right: unset;
+  left: 35px;
+}
+body.rtl .rs-service-areas .service-item .service-item-inner .service-normal-text ul li.rs-service-location {
+  margin-left: 0;
+  margin-right: 36px;
+}
+body.rtl .rs-addon-cost-calculator .cost_calculator .area-ctrol .select-option:after {
+  right: unset;
+  left: 12px;
+}
+body.rtl .elementor-widget-rs-dual-button .rselement-dual-btn-connector {
+  right: unset;
+}
+body.rtl .rs-portfolio-style1 .portfolio-item .portfolio-details {
+  left: unset;
+  right: 20px;
+}
+body.rtl .social-primary .elementor-social-icon:hover svg {
+  fill: #fff !important;
+}
+body.rtl .rs-portfolio-style1 .portfolio-item .portfolio-details .p-title a .title-icons {
+  margin-left: 0px;
+  margin-right: 40px;
+}
+body.rtl .check-arrow li {
+  padding: 3px 48px 5px 0px;
+}
+body.rtl .single .tag-line a {
+  margin-right: 6px;
+}
+body.rtl .rs-breadcrumbs-meta-elementor li:before {
+  left: unset;
+  right: -15px;
+}
+body.rtl .hfe-submenu-icon-arrow .hfe-nav-menu .parent-has-child .sub-arrow i {
+  right: 25px;
+}
+body.rtl .service-border-menu .hfe-nav-menu nav ul.hfe-nav-menu li.menu-item a:before {
+  transform: scaleX(-1) !important;
+  left: 20px;
+}
+body.rtl .bs-sidebar .widget_search button, body.rtl .bs-sidebar .bs-search button {
+  right: unset;
+  border-radius: 5px 0px 0px 5px;
+  left: 0;
+}
+body.rtl blockquote {
+  border-right: 4px solid #337ccf;
+  border-left: unset;
+}
+body.rtl blockquote cite:before {
+  margin-left: 10px;
+}
+body.rtl blockquote {
+  text-align: right;
+}
+body.rtl .bs-sidebar .recent-post-widget .post-desc span svg {
+  margin-right: 0;
+  margin-left: 4px;
+}
+body.rtl .prelements-blog-grid .prelements-pagination-area .nav-links > * {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+body.rtl .btm-cate li + li::before {
+  left: unset;
+  right: -13px;
+}
+body.rtl .btm-cate li.rs___tag::before {
+  left: 0;
+  right: -13px;
+}
+body.rtl .rs-blog .blog-item .blog-meta .blog-date i {
+  margin-right: 0px;
+  margin-left: 6px;
+}
+body.rtl .btm-cate li + li {
+  margin-left: 0;
+  margin-right: 26px;
+}
+body.rtl .rs-brochures .brochures-content ul li a .brochures-left .list-brochures-img img {
+  margin-right: 0px;
+  margin-left: 12px;
+}
+body.rtl .fluentform-widget-wrapper .ff-el-input--content::before {
+  left: unset;
+  right: 18px;
+}
+body.rtl .pagination .nav-links > *, body.rtl .pagination-area .nav-links > * {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+body.rtl .pagination .nav-links a.next.page-numbers:before {
+  transform: scaleX(-1) translate(50%, -50%) !important;
+}
+body.rtl .rs-blog .blog-item:not(.rs-flat) .blog-button a:before {
+  right: unset;
+  left: 22px;
+}
+body.rtl.woocommerce, body.rtl.woocommerce-ordering select {
+  border-left: 10px solid #f9f9f9;
+}
+body.rtl .rs-blog .blog-item:not(.rs-flat) .blog-button a {
+  padding: 13px 22px 13px 42px;
+}
+body.rtl .wpcf7 input[type=email] {
+  direction: unset;
+}
+body.rtl .testimonial-style3 .testimonial-informations .testimonial-name-desc {
+  margin-left: 0;
+  margin-right: 24px;
+}
+body.rtl .team-grid-style7 .team-item .team-inner-wrap .team-content {
+  text-align: right;
+}
+body.rtl .team-grid-style7 .team-item.reverse_team .team-inner-wrap .team-content .plus_team .social-icons1 {
+  right: unset;
+  left: 10px;
+}
+body.rtl .rs-price-table.style-1 .rs-pricing-table-body .rs-pricing-table-features-list li svg {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+body.rtl div.rs-accordion-area .accordion-header .elementor-accordion-icon-right {
+  left: 0;
+  right: auto;
+}
+body.rtl .rs-step-flow-working-process .step-number .step-left-number {
+  left: auto;
+  right: 10px;
+}
+body.rtl .rs-step-flow-working-process .step-number {
+  clip-path: polygon(23% 10%, 100% 10%, 100% 83%, 23% 83%, 0% 50%);
+}
+body.rtl .default-icon-showhide:hover .btn-part .services-btn svg {
+  transform: scaleX(-1) translateX(10px) !important;
+}
+body.rtl .fluentform-widget-wrapper .ff-el-group.dropdown-icon .ff-el-input--content:after {
+  right: unset;
+  left: 18px;
+}
+body.rtl .prelements-heading.style14 .title {
+  border-left: unset;
+  padding-left: unset;
+  border-right: 4px solid #337ccf;
+  padding-right: 12px;
+}
+body.rtl .hfe-layout-vertical .right-arrow-style2 ul .menu-item a:after {
+  left: 0;
+  right: unset;
+  transform: scaleX(-1) translate(-10px, -50%) !important;
+}
+body.rtl .service-item-area .service-item .service-icon-title span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+body.rtl .hfe-nav-menu .menu-item-has-children:not(.rs-mega-menu) .menu-item-has-children .sub-menu {
+  left: -100%;
+}
+body.rtl .rs-features-list-content li img {
+  margin-right: 0px;
+  margin-left: 10px;
+}

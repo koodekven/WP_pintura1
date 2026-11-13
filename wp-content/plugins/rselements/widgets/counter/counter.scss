@@ -1,0 +1,253 @@
+@import '../../common';
+
+.counter-top-area {
+	position: relative;
+	padding: 0;
+	.rs-counter-list {
+		.counter-icon {
+			display: inline-block;
+			i {
+				font-size: 50px;
+				color: #dcdcdc;
+				line-height: 60px;
+				transition: all 0.3s ease 0s;
+			}
+		
+		}
+		.count-text {
+			.rs-counter {
+				font-size: 50px;
+				color: #010d14;
+				line-height: 60px;
+				display: inline-block;
+				transition: all 0.3s ease 0s;
+			}
+			.title {
+				font-size: 18px;
+				color: #666;
+				line-height: 18px;
+				transition: all 0.3s ease 0s;
+				display: block;
+			}
+		}
+	}
+	&.style1 {
+		text-align: center;
+		.count-number {
+			span {
+				padding: 10px 0px 10px 0px;
+			}
+		}
+		
+	}
+	&.skew_enable {
+		.rs-counter-list {
+			position: relative;
+			z-index: 1;
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background:  #4301FF;
+			transform: skewX(-4deg);
+			border-radius: 10px;
+		}
+	}
+	&.style2 {
+		.rs-counter-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			.counter-icon {
+				display: inline-block;
+				align-self: end;
+				position: relative;
+				padding-bottom: 5px;
+				img {
+					z-index: 1;
+					position: relative;
+					transition: $transition;
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+				&:after {
+					position: absolute;
+					content: "";
+					width: 126px;
+					height: 130px;
+					border-radius: 10px;
+					bottom: -25px;
+					left: 26px;
+					background: #323f7c0d;
+				}
+			}
+			.count-text {
+				z-index: 1;
+				position: relative;
+			}
+			.count-number {
+				display: flex;
+				align-items: center;
+				span {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+	&.style3 {
+		.count-text {
+			display: flex;
+			align-items: flex-end;
+			.title {
+				position: relative;
+				bottom: 8px;
+			}
+		}
+	}
+	&.style4 {
+		padding: 20px 0 20px 20px;
+		position: relative;
+		.rs-counter-list {
+			position: relative;
+			z-index: 1;
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 70px;
+			background: #2b59ff;
+		}
+	}
+}
+
+
+.home_2_counters{
+	.elementor-counter-number-prefix{
+		flex-grow: unset !important;
+	}
+}
+
+.counter-custom-css {
+	.counter-top-area  {
+		.rs-counter-list {
+			display: flex;
+			flex-direction: column;
+			.counter-icon {
+				order: 2;
+			}
+			.count-text {
+				order: 1;
+			}
+		}
+	}
+}
+
+
+//Fix Hero Counter
+
+.counter{
+    text-align: center;
+    height: 210px;
+    width: 210px;
+    padding: 7px 4px 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+	&:before{
+		content: '';
+		background-color: #fff;
+		height: 157px;
+		width: 157px;
+		border-radius: 15px;
+		border: 5px solid $whiteColor;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+		transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: -1;
+	}
+	.counter-icon{
+		color: $whiteColor;
+		background: $primaryColor;
+		line-height: 70px;
+		font-size: 35px;
+		height: 70px;
+		width: 70px;
+		margin: 0 auto 8px;
+		border-radius: 19px 0 50px;
+		transform: rotate(45deg);
+		i,img,svg{
+			transform: rotate(-45deg);
+		}
+	}
+	.count-number{
+		position: relative;
+		span.rs-counter{
+			color: $secondaryColor;
+			font-size: 25px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			margin: 0 0 13px 0;
+			display: block;
+		}
+		span.plusss{
+			position: absolute;
+			color: $secondaryColor;
+			top: 6px;
+			right: 0;
+			left: 34%;
+			font-size: 20px;
+		}
+	}
+	
+	
+	h3{
+		color:$whiteColor;
+		background: $primaryColor;
+		font-size: 20px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		line-height: 28px;
+		text-transform: capitalize;
+		padding: 10px 5px;
+		margin: 0;
+		border-radius: 0 0 20px 20px;
+		position: relative;
+		&::before,
+		&::after{
+			content: "";
+			background: darken($primaryColor, 10%);
+			width: 23px;
+			height: 15px;
+			position: absolute;
+			z-index: -2;
+			top: -15px;
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+		}
+		&::before{
+			left: 0;
+		}
+		&::after{
+			transform: rotateY(180deg);
+			left: auto;
+			right: 0;
+		}
+	}
+
+}
+
+
+
+
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+}

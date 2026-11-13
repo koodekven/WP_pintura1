@@ -1,0 +1,147 @@
+@import '../../common';
+// Style One For Fix Hero
+.rs-portfolio-flex  {
+    .rs-portfolio-inner {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .rs-grid-item {
+            position: relative;
+            flex: 1;
+            transition: 0.8s cubic-bezier(0.29, 0, 0.2, 1);
+            min-height: 532px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            will-change: flex;
+            justify-content: end;
+            overflow: hidden;
+            z-index: 1;
+
+            &.bg-image {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+                display: block;
+                content: '';
+                background: rgba(0, 0, 0, 0.7);
+                transition: $transition;
+            }
+
+            .rs-item--meta {
+                display: flex;
+                padding: 30px;
+                position: relative;
+
+                .rs-item--title {
+                    margin-bottom: 0px;
+                    a {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #fff;
+                        &:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+
+                .rs-item--category {
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                &:before {
+                    opacity: 1;
+                    -webkit-animation: circle 0.75s;
+                    animation: circle 0.75s;
+                }
+                flex: 1.5;
+            }
+
+            .btn-part {
+                .portfolio-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: #fff;
+
+                    i {
+                        color: $primaryColor;
+                        font-size: 18px;
+                    }
+                    &:hover {
+                        background: $primaryColor;
+                    }
+                }
+
+                position: absolute;
+                left: unset;
+                right: 30px;
+                bottom: 30px;
+                visibility: hidden;
+                opacity: 0;
+                transition: $transition;
+            }  
+           
+            &:hover {
+                .btn-part {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            
+
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .rs-portfolio-flex .rs-portfolio-inner {
+        flex-wrap: nowrap;
+        gap: 24px;
+    } 
+}
+
+@media screen and (max-width: 991px) {
+    .rs-portfolio-flex .rs-portfolio-inner {
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .rs-portfolio-flex .rs-grid-item {
+        min-width: 48%;
+        max-width: 48%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rs-portfolio-flex .rs-grid-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}

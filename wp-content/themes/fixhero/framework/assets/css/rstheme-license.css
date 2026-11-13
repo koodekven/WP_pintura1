@@ -1,0 +1,144 @@
+.rstheme-form-wrapper {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 550px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.rstheme-form-wrapper h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.rstheme-form-wrapper p {
+    margin: 0;
+    display: block;
+}
+
+.rstheme-form-wrapper form {
+    margin-top: 20px;
+}
+
+.rstheme-form-wrapper .input-field {
+    margin-bottom: 20px;
+}
+
+.rstheme-form-wrapper .input-field label {
+    display: block;
+    color: #1d2327;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.rstheme-form-wrapper .input-field input {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+.rstheme-form-wrapper .input-field input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #034EA2;
+}
+
+.rstheme-form-wrapper .input-field span {
+    display: block;
+    margin: 8px 0 0;
+}
+
+.rstheme-form-wrapper .submit {
+    padding: 0;
+}
+
+.rstheme-form-wrapper .button {
+    width: 100%;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    line-height: 1;
+    border-radius: 5px;
+    background-color: #034EA2;
+    color: #fff;
+}
+
+.rstheme-form-wrapper .refresh-from,
+.rstheme-form-wrapper .deactivate-form {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.rstheme-form-wrapper .refresh-from h3 {
+    font-size: 18px;
+}
+
+.rstheme-form-wrapper .buttons-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.rstheme-form-wrapper .buttons-wrapper .deactivate-button {
+    background-color: #FD0304;
+    border-color: #FD0304;
+}
+
+.rstheme-form-wrapper .buttons-wrapper .document-button {
+    background-color: #002DCE;
+    border-color: #002DCE;
+}
+
+.rstheme-form-wrapper .license-info-list {
+    margin: 25px 0 0;
+    padding: 20px;
+    list-style: none;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.rstheme-form-wrapper .license-info-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.rstheme-form-wrapper .license-info-list .info-title {
+    flex: 0 0 180px;
+}
+
+.rstheme-form-wrapper .license-info-list .info-value {
+    font-weight: 500;
+}
+
+.rstheme-form-wrapper .license-info-list .status {
+    position: relative;
+    color: #008000;
+    padding-left: 10px;
+}
+
+.rstheme-form-wrapper .license-info-list .status::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: #008000;
+    border-radius: 50%;
+}
+
+.rstheme-form-wrapper .license-info-list .email-no-set {
+    color: #FD0304;
+}
+
+.rstheme-form-wrapper .license-info-list li:last-child {
+    margin: 0;
+}

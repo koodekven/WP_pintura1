@@ -1,0 +1,98 @@
+@import '../../common';
+
+.rs-price-table-slider {
+    &.rs-addon-slider {
+        .slick-dots {
+            li {
+                button {
+                    background: transparent;
+                }
+                &.slick-active {
+                    button {
+                        border-color: $primaryColor;
+                        background: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+    .pricing-wrapper {
+
+        // Assign Color Start
+        .title {
+            color: $whiteColor;
+        }
+        .pricing-price {
+            color: $whiteColor;
+            .get-price {
+                color: $primaryColor;
+            }
+            .get-period {
+                color: rgba(255,255,255,0.6);
+            }
+        }
+        .description {
+            color: rgba(255,255,255,0.6);
+        }
+        .btn-part {
+            a {
+                background: $primaryColor;
+                color: $whiteColor;
+                &:hover {
+                    background: $secondaryColor;
+                }
+            }
+        }
+        // Assign Color End
+
+        background: $titleColor;
+        border-radius: 4px;
+        position: relative;
+        padding: 40px;
+        text-align: center;
+        .pricing-price {
+            span {
+                display: inline-block;
+            }
+        }
+        .btn-part {
+            a {
+                padding: 10px 24px;
+                display: inline-block;
+            }
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            right: 20px;
+            left: 20px;
+            top: 20px;
+            bottom: 20px;
+            background: transparent;
+            border: 1px dashed $primaryColor;
+            pointer-events: none;
+        }
+    }
+    &.color_gradient_scheme {
+		.pricing-wrapper {
+            .pricing-price {
+                .get-price {
+                    color: $primaryColor;
+                }
+            }
+            .btn-part {
+                a {
+                    background-image: linear-gradient(90deg, $primaryColor 0%, $secondaryColor 100%);
+                    color: $whiteColor;
+                    &:hover {
+                        background-image: linear-gradient(90deg, $secondaryColor 0%, $primaryColor 100%);
+                        color: $whiteColor;
+                    }
+                }
+            }
+            &:after {
+                border-color: $primaryColor;
+            }
+        }
+	}
+}

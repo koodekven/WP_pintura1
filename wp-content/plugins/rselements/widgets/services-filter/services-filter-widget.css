@@ -1,0 +1,126 @@
+.rstab-main.service-filer-addon .tab-menu-wrapper {
+  margin-bottom: 60px;
+}
+.rstab-main.service-filer-addon .tab-menu-wrapper .nav-tabs {
+  border: none;
+  justify-content: center;
+}
+.rstab-main.service-filer-addon .tab-menu-wrapper .nav-tabs button {
+  outline: none;
+  background: #fff;
+  border: 5px solid #fff;
+  color: #231F20;
+  padding: 20px 30px;
+  margin: 0 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 2px;
+  width: 196px;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+}
+.rstab-main.service-filer-addon .tab-menu-wrapper .nav-tabs button img {
+  display: block;
+  height: 45px;
+  margin: 0 auto 12px;
+  width: auto;
+  max-width: 100%;
+}
+.rstab-main.service-filer-addon .tab-menu-wrapper .nav-tabs button.nav-link.active {
+  border: 5px solid #b1110e;
+}
+.rstab-main.service-filer-addon .tab-menu-wrapper .nav-tabs button.nav-link.active:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  border-color: #b1110e transparent;
+  display: block;
+  width: 0;
+  transform: translateX(-50%);
+}
+.rstab-main.service-filer-addon .tab-menu-wrapper .nav-tabs button.nav-link.active:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  border-width: 13px 13px 0;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  transform: translateX(-50%);
+}
+.rstab-main.service-filer-addon .tab-content {
+  background: none;
+  box-shadow: none;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap {
+  background: #fff;
+  padding: 10px 36px 30px 36px;
+  position: relative;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .title a {
+  color: #231F20;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .title a:hover {
+  color: #D52925;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .description {
+  color: #515261;
+  font-size: 17px;
+  margin: 10px 0 15px;
+  line-height: 27px;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .button-here a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #515261;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .button-here a i {
+  font-size: 18px;
+  transition: all 0.5s ease;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .button-here a:hover {
+  color: #D52925;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap .button-here a:hover i {
+  margin-left: 3px;
+  transform: translate3d(8px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  border-color: #D52925;
+}
+.rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  width: 100%;
+  height: 0;
+  border-left: 114px solid transparent;
+  border-right: 192px solid transparent;
+  border-bottom: 36px solid #fff;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 48% 0 0 0;
+}
+@media screen and (max-width: 991px) {
+  .rstab-main.service-filer-addon .tab-content .service-item .service-item-wrap .inner-wrap::before {
+    display: none;
+  }
+}

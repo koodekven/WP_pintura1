@@ -1,0 +1,22 @@
+@import '../../common';
+
+.marquee_wrapper {
+	position: relative;
+	.marquee_text { 
+		font-weight: 800;
+		font-size: 100px;
+		line-height: 100%;
+		font-weight: bold;
+		overflow: hidden;
+		display: inline-block;
+
+		img { 
+			margin: 0 15px;
+			cursor: grab;
+			border-radius: 4px;
+			&:active {
+				cursor: grabbing;
+			}
+		}
+	}
+}

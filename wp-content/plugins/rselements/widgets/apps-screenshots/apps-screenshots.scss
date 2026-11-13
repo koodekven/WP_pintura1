@@ -1,0 +1,23 @@
+@import '../../common';
+.rs-apps-screenshots {
+	.slick-list.draggable {
+		padding: 100px 0 !important;
+	}
+	.grid-item {
+		position: relative;
+		transition: $transition;
+		img {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+			border-radius: 30px;
+		}
+	}
+	.grid-item.slick-center {
+		-webkit-transform: scale(1.13);
+		-ms-transform: scale(1.13);
+		transform: scale(1.13);
+		z-index: 3;
+		img {
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+		}
+	}
+}

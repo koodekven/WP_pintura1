@@ -1,0 +1,59 @@
+<?php
+/**
+ * @author  rs-theme
+ * @since   1.0
+ * @version 1.0 
+ */
+
+get_header();
+global $fixhero_option;
+$fixhero_shop_layouts = get_theme_mod('fixhero_shop_page_sidebar_setting');
+$fixhero_shop_layouts = $fixhero_shop_layouts ? $fixhero_shop_layouts : '';
+// Layout class
+$mevim_layout_class = 'col-sm-12 col-xs-12';
+if(!empty( $fixhero_shop_layouts )) {
+	if ( 'shop_no_sidebar' == $fixhero_shop_layouts ) {
+		$mevim_layout_class = 'col-sm-12 col-xs-12';
+	}
+	elseif( ($fixhero_shop_layouts == 'shop_left_sidebar') || ($fixhero_shop_layouts == 'shop_right_sidebar') ){
+		$mevim_layout_class = 'col-md-8 col-xs-12';
+	}
+	else{
+		$mevim_layout_class = 'col-sm-12 col-xs-12';
+	}
+}
+?>
+
+<div class="container">
+	<div id="content" class="site-content">		
+		<div class="row">
+			<?php
+				if(!empty($fixhero_shop_layouts) && is_product()){
+					?>
+					<div class="col-sm-12 col-xs-12">
+					    <?php					
+							woocommerce_content();						
+						?>
+					</div>
+					<?php
+				}else{				
+					if ( $fixhero_shop_layouts == 'shop_left_sidebar'  ) {
+						get_sidebar('woocommerce');
+					}
+					?>    			
+				    <div class="<?php echo esc_attr($mevim_layout_class);?>">
+					    <?php					
+							woocommerce_content();						
+		   				 ?>
+				    </div>
+					<?php
+					if ( $fixhero_shop_layouts == 'shop_right_sidebar'  ) {
+						get_sidebar('woocommerce');
+					}	
+				}
+			?>
+		</div>
+	</div>
+</div>
+<?php
+get_footer();

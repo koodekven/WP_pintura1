@@ -1,0 +1,79 @@
+.service-item-area .service-item {
+  background-color: #f2f2f2;
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 4px 20px rgba(21, 21, 49, 0.1);
+  border: 2px solid #FFFFFF;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.service-item-area .service-item:first-child {
+  margin-top: 0px;
+}
+.service-item-area .service-item .service-icon-title {
+  color: #071230;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+.service-item-area .service-item .service-icon-title span {
+  margin-left: 10px;
+  transition: all 0.3s ease 0s;
+}
+.service-item-area .service-item .service-icon-title i {
+  transition: all 0.3s ease 0s;
+}
+.service-item-area .service-item .service-icon-title img {
+  width: 30px;
+  height: 30px;
+}
+.service-item-area .service-item .arrow-btn {
+  font-size: 20px;
+  color: #071230;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+}
+.service-item-area .service-item:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #c11f4a;
+  height: 150px;
+  width: 470px;
+  border-radius: 50%;
+  top: 100%;
+  left: 100%;
+  transition: all 0.4s;
+}
+.service-item-area .service-item:hover:before {
+  top: -30px;
+  left: -50px;
+}
+.service-item-area .service-item:hover .arrow-btn {
+  transform: translateX(10px);
+}
+.service-item-area .service-item path {
+  transition: all 0.4s;
+}
+.service-item-area .service-item:first-child {
+  background-color: #c11f4a;
+}
+.service-item-area .service-item:first-child span, .service-item-area .service-item:first-child i {
+  color: #fff;
+}
+.service-item-area .service-item:first-child svg path {
+  fill: #fff;
+}
+
+.service-item-area .service-item:hover span, .service-item-area .service-item:hover i {
+  color: #fff;
+}
+.service-item-area .service-item:hover svg path {
+  fill: #fff;
+}
